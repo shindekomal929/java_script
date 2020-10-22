@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var ages=[10,13,18,20];
+        document.write(ages+"<br>");
+        var b=ages.some(checkAdult);
+        document.write(b+"<br>");
+        var c=ages.every(checkAdult);
+        document.write(c+"<br>");
+        function checkAdult(age){
+            return age>=18;
+        }
+        var d=ages.find(checkMain);
+        document.write(d+"<br>");
+        var e=ages.filter(checkMain);
+        document.write(e+"<br>");
+        function checkMain(age){
+            return age>=18;
+        }
+        var m=["Sanjay","Aman","Rehman","Karan"];
+        m.toString();
+        document.write(m+"<br>");
+        m.fill("Ram");
+        document.write(m+"<br>");
+        m.forEach(function(value,index){
+         document.write(index+":"+value+"<br>");
+        })
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

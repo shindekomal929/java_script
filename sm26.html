@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=["Sanjay","Aman","Rehman","Karan"];
+        document.write(a+"<br><br>");
+        a.sort();
+        document.write(a+"<br>");
+        a.reverse();
+        document.write(a+"<br>");
+        a.pop();
+        document.write(a+"<br>");
+        a.push("Aman");
+        document.write(a+"<br>");
+        a.shift();
+        document.write(a+"<br>");
+        a.unshift("Sanjay");
+        document.write(a+"<br>");
+        var b=a.concat("Sheema","Ram");
+        document.write(b+"<br>");
+        var c=b.join(" ");
+        document.write(c+"<br>");
+        var d=a.slice(1,4);
+        document.write(d+"<br>");
+        a.splice(2,0,"neha","aman");
+        document.write(a+"<br>");
+        var e=Array.isArray(a);
+        document.write(e+"<br>");
+        var f=a.indexOf("aman",2);
+        document.write(f+"<br>");
+        var g=a.lastIndexOf("neha",1);
+        document.write(g+"<br>");
+        var m=a.includes("Sanjay");
+        document.write(m+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
